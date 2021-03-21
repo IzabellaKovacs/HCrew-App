@@ -3,6 +3,7 @@ import { Text, View, SafeAreaView } from 'react-native';
 import ApiKeys from './ApiKeys';
 import * as firebase from 'firebase';
 import WelcomeScreen from './app/screens/WelcomeScreen';
+import LoginScreen from './app/screens/LoginScreen';
 
 export default class App extends React.Component {
 
@@ -15,7 +16,7 @@ export default class App extends React.Component {
   }
 
   render(){
-     return < WelcomeScreen />
+     return < LoginScreen />
   }
 }
 
