@@ -1,12 +1,12 @@
 import React from 'react';
 import {StyleSheet, View, Image, Text, TouchableOpacity, TextInput} from 'react-native';
 
-function LoginScreen() {
+export default function LoginScreen({navigation}) {
     return(
         <View style = {styles.container}>
             <Image style={styles.logo} source={require('../assets/lgrg.png')}/>
             <TextInput style={{top: -50, height: 50, width: 300, justifyContent: 'center', backgroundColor: 'white', borderRadius: 15}}
-                       placeholder=" Email" 
+                       placeholder=" Username" 
                        placeholderTextColor="#771D98"
 
             />
@@ -15,7 +15,7 @@ function LoginScreen() {
                        placeholderTextColor="#771D98"
             />
             <TouchableOpacity style={styles.buttonContainer}>
-                 <Text style={{textAlign: 'center', fontSize: 28, top: 0, color: 'white', fontWeight: 'bold'}}>Log in</Text>
+                 <Text onPress={() => navigation.navigate('StartScreen')} style={{textAlign: 'center', fontSize: 28, top: 0, color: 'white', fontWeight: 'bold'}}>Log in</Text>
             </TouchableOpacity>
 
             <Text style={{top: 5, color:"#771D98", fontWeight:'bold',fontSize:20}}>or with</Text>
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         width: 200, 
         height: 200,
         position: 'absolute',
-        top: 60,
+        top: 40,
     },
     buttonContainer: {
         top: -10,
@@ -51,4 +51,3 @@ const styles = StyleSheet.create({
      }
 });
 
-export default LoginScreen;

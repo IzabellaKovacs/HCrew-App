@@ -1,18 +1,19 @@
 import React from 'react';
 import {StyleSheet, View, Image, Text, TouchableOpacity} from 'react-native';
+import Swiper from 'react-native-swiper';
 
-function WelcomeScreen(props){
+export default function WelcomeScreen({navigation}){
     return(
         <View style = {styles.container}>
             <Image style = {styles.logo} source={require('../assets/reee.png')} />
             <Text style = {styles.titletext}>HCREW</Text>
            
             <TouchableOpacity style={styles.buttonContainer}>
-                 <Text style={{textAlign: 'center', fontSize: 28, top: 0, color: 'white', fontWeight: 'bold'}}>Log in</Text>
+                 <Text onPress={() => navigation.navigate('LoginScreen')} style={{textAlign: 'center', fontSize: 28, top: 0, color: 'white', fontWeight: 'bold'}}>Log in</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={ [styles.buttonContainer, {top: 265, backgroundColor: 'white', borderWidth: 5, borderColor: '#771D98' }]}>
-                <Text style={{textAlign: 'center', fontSize: 28, top: 0, color: '#771D98', fontWeight: 'bold'}}>Register</Text>
+                <Text onPress={() => navigation.navigate('RegisterScreen')} style={{textAlign: 'center', fontSize: 28, top: 0, color: '#771D98', fontWeight: 'bold'}}>Register</Text>
             </TouchableOpacity>
 
         </View>
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
         width: 300, 
         height: 300,
         position: 'absolute',
-        top: 90,
+        top: 50,
     },
     titletext: {
        fontSize: 80,
@@ -47,5 +48,3 @@ const styles = StyleSheet.create({
         borderRadius: 25,
      },
 });
-
-export default WelcomeScreen;
