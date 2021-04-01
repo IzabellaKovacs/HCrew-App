@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         width: 200, 
         height: 200,
         position: 'absolute',
-        top: 40,
+        top: 60,
     },
     buttonContainer: {
         top: -10,
