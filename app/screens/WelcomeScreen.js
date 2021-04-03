@@ -1,6 +1,5 @@
 import React from 'react';
 import {StyleSheet, View, Image, Text, TouchableOpacity} from 'react-native';
-import Swiper from 'react-native-swiper';
 
 export default function WelcomeScreen({navigation}){
     return(
