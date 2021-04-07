@@ -2,17 +2,21 @@ import React from 'react';
 import {StyleSheet, View, Image, Text, TouchableOpacity, SafeAreaView} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-
-export default function Breakfast({navigation}){
+export default function Exercises({navigation}){
     return (
         <SafeAreaView>
 
-            <Text style={{textAlign: 'center', fontSize: 28, top: 0, color: '#771D98', fontWeight: 'bold'}}>Breakfast</Text>
+            <Text style={{textAlign: 'center', fontSize: 28, top: 0, color: '#771D98', fontWeight: 'bold'}}>Exercises</Text>
              
             <View style={{flexDirection:'row', marginTop:15}}>
                 <TouchableOpacity style={styles.categoryBtn}>
                     <View>
-                     <MaterialIcons onPress={()=>navigation.navigate('Meals')} name="arrow-back" size={40} color="#771D98"/>
+                     <MaterialIcons onPress={()=>navigation.navigate('StartScreen')} name="arrow-back" size={40} color="#771D98"/>
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.categoryBtn}>
+                    <View>
+                     <MaterialIcons name="arrow-forward" size={40} color="#771D98" />
                     </View>
                 </TouchableOpacity>
             </View>
@@ -21,34 +25,27 @@ export default function Breakfast({navigation}){
 
                     <View style={styles.card}>
                         <View style={styles.cardImgWrapper}>
-                            <Image source={require('../assets/banners/breakfast1_1.jpeg')} resizeMode='cover' style={styles.cardImg}/>
+                            <Image source={require('../assets/banners/cardio.jpg')} resizeMode='cover' style={styles.cardImg}/>
+                        </View>
+                    <View style={styles.cardInfo} >
+                        <Text onPress={()=>navigation.navigate('Cardio')} style={styles.cardTitle}>Cardio</Text>
+                    </View>
+                    </View>
+                    
+                    <View style={styles.card}>
+                        <View style={styles.cardImgWrapper}>
+                            <Image source={require('../assets/banners/bodybuilding.jpg')} resizeMode='cover' style={styles.cardImg}/>
                         </View>
                     <View style={styles.cardInfo}>
-                        <Text style={styles.cardTitle} onPress={()=>navigation.navigate('Breakfast1_1')}>Quinoa Pancakes (Vegan + Gluten Free)</Text>
+                        <Text onPress={()=>navigation.navigate('BodyBld')} style={styles.cardTitle}>Body Building</Text>
                     </View>
                     </View>
                     <View style={styles.card}>
                         <View style={styles.cardImgWrapper}>
-                            <Image source={require('../assets/banners/breakfast1_2.jpg')} resizeMode='cover' style={styles.cardImg}/>
+                            <Image source={require('../assets/banners/lweight.jpg')} resizeMode='cover' style={styles.cardImg}/>
                         </View>
                     <View style={styles.cardInfo}>
-                        <Text style={styles.cardTitle} onPress={()=>navigation.navigate('Breakfast1_2')}>Gluten-Free Vegan Granola</Text>
-                    </View>
-                    </View>
-                    <View style={styles.card}>
-                        <View style={styles.cardImgWrapper}>
-                            <Image source={require('../assets/banners/breakfast1_3.jpeg')} resizeMode='cover' style={styles.cardImg}/>
-                        </View>
-                    <View style={styles.cardInfo}>
-                        <Text style={styles.cardTitle} onPress={()=>navigation.navigate('Breakfast1_3')}>Vegan Protein Bars</Text>
-                    </View>
-                    </View>
-                    <View style={styles.card}>
-                        <View style={styles.cardImgWrapper}>
-                            <Image source={require('../assets/banners/breakfast1_4.jpeg')} resizeMode='cover' style={styles.cardImg}/>
-                        </View>
-                    <View style={styles.cardInfo}>
-                        <Text style={styles.cardTitle} onPress={()=>navigation.navigate('Breakfast1_4')}>Gluten-Free Vegan Biscuits</Text>
+                        <Text style={styles.cardTitle}>Lose Weight</Text>
                     </View>
                     </View>
 
@@ -71,8 +68,8 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
     },
     card: {
-        height: 170,
-        marginVertical: 8,
+        height: 150,
+        marginVertical: 30,
         flexDirection:'row',
         shadowColor: '#999',
         shadowOffset: {width: 4, height: 4},
@@ -80,8 +77,7 @@ const styles = StyleSheet.create({
         shadowRadius: 15,
     },
     cardImgWrapper: {
-        flex:3,
-        width: 200
+        flex:3
     },
     cardImg: {
         height:'100%',
@@ -94,11 +90,10 @@ const styles = StyleSheet.create({
         padding: 10,
         borderColor: '#ccc',
         borderWidth: 1,
-        backgroundColor:'white'
     },
     cardTitle: {
         alignSelf: 'center',
-        fontSize: 20,
+        fontSize: 28,
         color: '#771D98',
         fontWeight: 'bold',
         top: 40

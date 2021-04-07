@@ -46,7 +46,7 @@ export default function StartScreen({navigation}){
 
                 <TouchableOpacity style={styles.categoryBtn}>
                 <View style={styles.categoryIcon}>
-                    <MaterialIcons name="fitness-center" size={40} color="white"/>
+                    <MaterialIcons onPress={()=>navigation.navigate('Exercises')} name="fitness-center" size={40} color="white"/>
                 </View>
                 </TouchableOpacity>
 

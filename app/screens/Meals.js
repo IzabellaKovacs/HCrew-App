@@ -16,7 +16,7 @@ export default function Meals({navigation}){
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.categoryBtn}>
                     <View>
-                     <MaterialIcons name="arrow-forward" size={40} color="#771D98" />
+                     <MaterialIcons onPress={()=>navigation.navigate('Exercises')} name="arrow-forward" size={40} color="#771D98" />
                     </View>
                 </TouchableOpacity>
             </View>
