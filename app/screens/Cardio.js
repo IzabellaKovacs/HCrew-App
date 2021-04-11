@@ -14,6 +14,11 @@ export default function Cardio({navigation}){
                      <MaterialIcons onPress={()=>navigation.navigate('Exercises')} name="arrow-back" size={40} color="#771D98"/>
                     </View>
                 </TouchableOpacity>
+                <TouchableOpacity style={{marginHorizontal:320,width:400}}>
+                    <View>
+                     <MaterialIcons onPress={()=>navigation.navigate('Cardio1')} name="arrow-forward" size={40} color="#771D98"/>
+                    </View>
+                </TouchableOpacity>
             </View>
                
              </ImageBackground>

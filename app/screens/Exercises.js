@@ -45,7 +45,7 @@ export default function Exercises({navigation}){
                             <Image source={require('../assets/banners/lweight.jpg')} resizeMode='cover' style={styles.cardImg}/>
                         </View>
                     <View style={styles.cardInfo}>
-                        <Text style={styles.cardTitle}>Lose Weight</Text>
+                        <Text onPress={()=>navigation.navigate('Losew')} style={styles.cardTitle}>Lose Weight</Text>
                     </View>
                     </View>
 

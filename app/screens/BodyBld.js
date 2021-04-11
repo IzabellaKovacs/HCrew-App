@@ -24,7 +24,7 @@ export default function BodyBld({navigation}){
             </View>
 
             <View style={styles.categoryContainer}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate('Arms1')}>
                 <View style={styles.categoryIcon}>
                 <Image source={require('../assets/banners/arms.png')} style={{width:90,height:90}}/>
                 </View>
@@ -32,7 +32,7 @@ export default function BodyBld({navigation}){
             </View>
 
             <View style={styles.categoryContainer}>
-               <TouchableOpacity>
+               <TouchableOpacity onPress={()=>navigation.navigate('Abs1')}>
                 <View style={styles.categoryIcon}>
                 <Image source={require('../assets/banners/abs.png')} style={{width:100,height:100}}/>
                 </View>

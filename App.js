@@ -24,7 +24,13 @@ import BodyBld from './app/screens/BodyBld';
 import Legs1 from './app/screens/Legs1';
 import Redirection1 from './app/screens/Redirection1';
 import Legs2 from './app/screens/Legs2';
-
+import Arms2 from './app/screens/Arms2';
+import Arms1 from './app/screens/Arms1';
+import Abs1 from './app/screens/Abs1';
+import Abs2 from './app/screens/Abs2';
+import Cardio1 from './app/screens/Cardio1';
+import Losew from './app/screens/Losew';
+import Meditation from './app/screens/Meditation';
 
 const Stack = createStackNavigator();
 
@@ -59,11 +65,23 @@ export default class App extends React.Component {
           <Stack.Screen name="Breakfast1_4" component={Breakfast1_4}/>
 
           <Stack.Screen name="Cardio" component={Cardio}/>
+          <Stack.Screen name="Cardio1" component={Cardio1}/>
+
           <Stack.Screen name="BodyBld" component={BodyBld}/>
              <Stack.Screen name="Redirection1" component={Redirection1}/>
           <Stack.Screen name="Legs1" component={Legs1}/>
           <Stack.Screen name="Legs2" component={Legs2}/>
-          
+
+          <Stack.Screen name="Arms2" component={Arms2}/>
+          <Stack.Screen name="Arms1" component={Arms1}/>
+          <Stack.Screen name="Abs1" component={Abs1}/>
+          <Stack.Screen name="Abs2" component={Abs2}/>
+
+          <Stack.Screen name="Losew" component={Losew}/>
+          <Stack.Screen name="Meditation" component={Meditation}/>
+
+
+
         </Stack.Navigator>
       </NavigationContainer> 
      );
