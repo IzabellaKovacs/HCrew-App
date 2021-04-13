@@ -31,6 +31,8 @@ import Abs2 from './app/screens/Abs2';
 import Cardio1 from './app/screens/Cardio1';
 import Losew from './app/screens/Losew';
 import Meditation from './app/screens/Meditation';
+import CitiesListScreen from './app/screens/CitiesListScreen';
+import CityDetails from './app/screens/CityDetails';
 
 const Stack = createStackNavigator();
 
@@ -80,6 +82,8 @@ export default class App extends React.Component {
           <Stack.Screen name="Losew" component={Losew}/>
           <Stack.Screen name="Meditation" component={Meditation}/>
 
+          <Stack.Screen name="CitiesListScreen" component={CitiesListScreen}/>
+          <Stack.Screen name="CityDetails" component={CityDetails}/>
 
 
         </Stack.Navigator>

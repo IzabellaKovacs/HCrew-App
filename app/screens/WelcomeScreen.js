@@ -1,9 +1,9 @@
 import React from 'react';
-import {StyleSheet, View, Image, Text, TouchableOpacity} from 'react-native';
+import {StyleSheet, View, Image, Text, TouchableOpacity,SafeAreaView} from 'react-native';
 
 export default function WelcomeScreen({navigation}){
     return(
-        <View style = {styles.container}>
+        <SafeAreaView style = {styles.container}>
             <Image style = {styles.logo} source={require('../assets/reee.png')} />
             <Text style = {styles.titletext}>HCREW</Text>
            
@@ -15,7 +15,7 @@ export default function WelcomeScreen({navigation}){
                 <Text onPress={() => navigation.navigate('RegisterScreen')} style={{textAlign: 'center', fontSize: 28, top: 0, color: '#771D98', fontWeight: 'bold'}}>Register</Text>
             </TouchableOpacity>
 
-        </View>
+        </SafeAreaView>
     );
     }
     

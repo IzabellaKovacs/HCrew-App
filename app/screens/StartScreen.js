@@ -52,7 +52,7 @@ export default function StartScreen({navigation}){
 
                 <TouchableOpacity style={styles.categoryBtn}>
                 <View style={styles.categoryIcon}>
-                    <MaterialIcons name="people" size={40} color="white"/>
+                    <MaterialIcons onPress={()=>navigation.navigate('CitiesListScreen')} name="people" size={40} color="white"/>
                 </View>
                 </TouchableOpacity>
             </View>
