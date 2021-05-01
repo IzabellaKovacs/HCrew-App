@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Image, Text, TouchableOpacity,SafeAreaView} from 'react-native';
+import {StyleSheet, Image, Text, TouchableOpacity,SafeAreaView} from 'react-native';
 
 export default function WelcomeScreen({navigation}){
     return(

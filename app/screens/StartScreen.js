@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Image, Text, TouchableOpacity, SafeAreaView} from 'react-native';
-import Swiper from 'react-native-swiper';
+import Swiper from 'react-native-swiper/src';
 
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 

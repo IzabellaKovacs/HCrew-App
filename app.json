@@ -15,6 +15,9 @@
     },
     "web": {
       "favicon": "./app/assets/reee.png"
-    }
+    },
+    "facebookScheme": "fb137906921568460",
+    "facebookAppId": "137906921568460",
+    "facebookDisplayName" : "react-hcrew"
   }
 }
