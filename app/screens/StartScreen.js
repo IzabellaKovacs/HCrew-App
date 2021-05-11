@@ -58,7 +58,7 @@ export default function StartScreen({navigation}){
             </View>
 
             <View style={{alignItems:'center'}}>
-            <TouchableOpacity style={styles.buttonContainer}>
+            <TouchableOpacity style={styles.buttonContainer} onPress={()=>navigation.navigate('My Program')}>
                  <Text style={{textAlign: 'center', fontSize: 28, top: 0, color: 'white', fontWeight: 'bold'}}>My program</Text>
             </TouchableOpacity>
             <TouchableOpacity style={ [styles.buttonContainer, {top: 150, backgroundColor: 'white', borderWidth: 5, borderColor: '#771D98' }]}>

@@ -1,7 +1,8 @@
 import * as firebase from 'firebase';
 import "firebase/auth";
+import 'firebase/firestore';
 
-const  firebaseConfig={
+const firebaseConfig={
       apiKey: "AIzaSyAtp8kkBFn5rpCEFed_dZeaWVdDpE9kPrc",
       authDomain: "firstreactfirebasep.firebaseapp.com",
       projectId: "firstreactfirebasep",
@@ -14,5 +15,3 @@ const  firebaseConfig={
 firebase.initializeApp(firebaseConfig);
 
 export default firebase;
-
-  

@@ -1,3 +1,4 @@
+import { firestore } from 'firebase';
 import React from 'react';
 import {StyleSheet, View, Image, Text, TouchableOpacity, TextInput,SafeAreaView} from 'react-native';
 
@@ -24,7 +25,12 @@ export default class RegisterScreen extends React.Component {
                 return;
             }
 
-            firebase.auth().createUserWithEmailAndPassword(email,password);
+            firebase
+            .auth()
+            .createUserWithEmailAndPassword(email,password)
+            .then(({user}) => {
+                firestore().collection("users").doc(user.uid).set({})
+            });
 
         }catch(error){
             console.log(error.toString());

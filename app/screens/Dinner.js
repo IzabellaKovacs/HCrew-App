@@ -1,13 +1,13 @@
 import React from 'react';
-import {StyleSheet, View, Image, Text, TouchableOpacity, SafeAreaView} from 'react-native';
+import {StyleSheet, View, Image, Text, TouchableOpacity, SafeAreaView,FlatList} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-export default function Dinner({navigation}){
+export default function Dinner ({navigation}){
     return (
         <SafeAreaView>
-
+       
             <Text style={{textAlign: 'center', fontSize: 28, top: 0, color: '#771D98', fontWeight: 'bold'}}>Dinner</Text>
-             
+        
             <View style={{flexDirection:'row', marginTop:15}}>
                 <TouchableOpacity style={styles.categoryBtn}>
                     <View>
@@ -53,9 +53,8 @@ export default function Dinner({navigation}){
 
                 </View>
 
-            
         </SafeAreaView>
-    );
+      );
 }
 
 const styles = StyleSheet.create({

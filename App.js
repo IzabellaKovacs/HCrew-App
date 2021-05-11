@@ -33,11 +33,15 @@ import Meditation from './app/screens/Meditation';
 import CitiesListScreen from './app/screens/CitiesListScreen';
 import CityDetails from './app/screens/CityDetails';
 
+import MyProgram from './app/screens/todoNew/MyProgram';
+import ToDoList from './app/screens/todoNew/ToDoList';
+import EditList from './app/screens/todoNew/EditList';
+import Colors  from './app/constants/Colors';
+
 const Stack = createStackNavigator();
 
-export default class App extends React.Component {
+export default function App() {
 
-  render(){
      return (
       <NavigationContainer>
         <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName="WelcomeScreen">
@@ -76,10 +80,42 @@ export default class App extends React.Component {
           <Stack.Screen name="CitiesListScreen" component={CitiesListScreen}/>
           <Stack.Screen name="CityDetails" component={CityDetails}/>
 
+          <Stack.Screen name="My Program" options={{headerShown: true,headerTintColor: "#771D98"}} component={MyProgram}/>
+          <Stack.Screen
+              name="ToDoList"
+              component={ToDoList}
+              options={
+                      {headerShown: true},
+                      ({route}) => ({
+                        title: route.params.title,
+                        headerShown: true,
+                        headerStyle: {
+                          backgroundColor: route.params.color,
+                        },
+                        headerTintColor: "white"
+                      })
+                      }  
+                       
+          />
+          <Stack.Screen 
+              name="Edit"
+              component={EditList}
+              options={
+                      ({route}) => ({
+                        title: route.params.title? `Edit ${route.params.title} list` : "Create new list",
+                        headerShown: true,
+                        headerStyle: {
+                          backgroundColor: route.params.color || Colors.purple1,
+                        },
+                        headerTintColor: "white"
+                      })
+                    }
+              
+          />
 
         </Stack.Navigator>
       </NavigationContainer> 
      );
-  }
+
 }
 
