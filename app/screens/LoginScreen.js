@@ -18,17 +18,24 @@ export default class LoginScreen extends React.Component{
 
     loginUser = (email,password) => {
 
-        var errorCode;
-
+        if(email == "") {
+            alert("Write your email!");
+        } else if(password == "") {
+            alert("Write your password!");
+        } else {
             firebase.auth().signInWithEmailAndPassword(email,password).then( () => {
                this.props.navigation.navigate('StartScreen');
             })
              .catch( function(error) {
-                errorCode = error.code;
-                if (errorCode === 'auth/wrong-password') {
-                    alert('Wrong password.');
-              }
+                var errorCode = error.code;
+                if(errorCode == 'auth/invalid-email')
+                alert("Invalid Email!");
+                else if(errorCode == 'auth/user-not-found') 
+                alert("User not found!");
+                else if(errorCode == 'auth/wrong-password') 
+                alert("Wrong Password!"); 
             });
+        }
     }
     
 

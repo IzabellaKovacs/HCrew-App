@@ -1,0 +1,357 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#E7CDEA",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Object {
+        "height": 200,
+        "position": "absolute",
+        "top": 60,
+        "width": 200,
+      }
+    }
+  />
+  <TextInput
+    allowFontScaling={true}
+    autoCapitalize="none"
+    autoCorrect={false}
+    onChangeText={[Function]}
+    placeholder=" Email"
+    placeholderTextColor="#771D98"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 15,
+        "height": 50,
+        "justifyContent": "center",
+        "top": -50,
+        "width": 300,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder=" Password"
+    placeholderTextColor="#771D98"
+    rejectResponderTermination={true}
+    secureTextEntry={true}
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 15,
+        "height": 50,
+        "justifyContent": "center",
+        "top": -40,
+        "width": 300,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#771D98",
+        "borderRadius": 25,
+        "height": 50,
+        "justifyContent": "center",
+        "opacity": 1,
+        "top": -10,
+        "width": 300,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "white",
+          "fontSize": 28,
+          "fontWeight": "bold",
+          "textAlign": "center",
+          "top": 0,
+        }
+      }
+    >
+      Log in
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#771D98",
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "top": 5,
+      }
+    }
+  >
+    or with
+  </Text>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={1}
+        style={
+          Object {
+            "height": 50,
+            "marginHorizontal": 10,
+            "position": "absolute",
+            "top": 10,
+            "width": 50,
+          }
+        }
+      />
+    </View>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={1}
+        style={
+          Object {
+            "height": 50,
+            "marginHorizontal": -50,
+            "position": "absolute",
+            "top": 10,
+            "width": 50,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`snapshot renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#E7CDEA",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Object {
+        "height": 200,
+        "position": "absolute",
+        "top": 60,
+        "width": 200,
+      }
+    }
+  />
+  <TextInput
+    allowFontScaling={true}
+    autoCapitalize="none"
+    autoCorrect={false}
+    onChangeText={[Function]}
+    placeholder=" Email"
+    placeholderTextColor="#771D98"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 15,
+        "height": 50,
+        "justifyContent": "center",
+        "top": -50,
+        "width": 300,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder=" Password"
+    placeholderTextColor="#771D98"
+    rejectResponderTermination={true}
+    secureTextEntry={true}
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 15,
+        "height": 50,
+        "justifyContent": "center",
+        "top": -40,
+        "width": 300,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#771D98",
+        "borderRadius": 25,
+        "height": 50,
+        "justifyContent": "center",
+        "opacity": 1,
+        "top": -10,
+        "width": 300,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "white",
+          "fontSize": 28,
+          "fontWeight": "bold",
+          "textAlign": "center",
+          "top": 0,
+        }
+      }
+    >
+      Log in
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#771D98",
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "top": 5,
+      }
+    }
+  >
+    or with
+  </Text>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={1}
+        style={
+          Object {
+            "height": 50,
+            "marginHorizontal": 10,
+            "position": "absolute",
+            "top": 10,
+            "width": 50,
+          }
+        }
+      />
+    </View>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={1}
+        style={
+          Object {
+            "height": 50,
+            "marginHorizontal": -50,
+            "position": "absolute",
+            "top": 10,
+            "width": 50,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

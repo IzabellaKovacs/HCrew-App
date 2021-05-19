@@ -18,20 +18,32 @@ export default class RegisterScreen extends React.Component {
     signUpUser = (email,password) => {
 
         try{
-
-            if(this.state.password.length<6)
-            {
-                alert("Please enter at least 6 characters")
-                return;
-            }
-
+            if(this.state.email.length == 0) {
+                alert("Write your email!");
+            } else if(password == "") {
+                alert("Write your password!");
+            } else if(this.state.password.length < 6){
+                alert("Password must have at least 6 characters!")
+            }else{
             firebase
             .auth()
             .createUserWithEmailAndPassword(email,password)
+            .then(() => {
+                this.props.navigation.navigate('StartScreen');
+            })
             .then(({user}) => {
-                firestore().collection("users").doc(user.uid).set({})
-            });
-
+                firestore().collection("users").doc(user.uid).set({});
+            })
+            .catch( (error) => {
+                var errorCode = error.code;
+                if(errorCode == 'auth/invalid-email')
+                    alert("Invalid Email!");
+                else if(errorCode == 'auth/email-already-in-use') 
+                    alert("Email already exists!");
+                else if(errorCode == 'auth/wrong-password') 
+                    alert("Wrong Password!"); 
+              });
+            } 
         }catch(error){
             console.log(error.toString());
         }
